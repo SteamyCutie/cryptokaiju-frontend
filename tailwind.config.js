@@ -4,11 +4,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      'light-blue': '#1282a2',
-      'dark-blue': '#1f2760',
-      'light-oliver': '#dfd4d0',
-      'light-sky': '#f0f8f5',
-      'dark-grey': '#dddddd'
+      colors: {
+        'light-blue': '#1282a2',
+        'dark-blue': '#1f2760',
+        'light-oliver': '#dfd4d0',
+        'light-sky': '#f0f8f5',
+        'dark-grey': '#dddddd',
+        'black': '#222222',
+        'blacker': '#000000'
+      }
     },
   },
   plugins: [],
