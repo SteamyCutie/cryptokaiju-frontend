@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import OPENSEA_LIGHT from "../assets/svg/opensea-light.svg"
 import LOOKSRARE_LIGHT from "../assets/svg/looksrare-light.svg"
 import TWITTER_LIGHT from "../assets/svg/twitter-light.svg"
