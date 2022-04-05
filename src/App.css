@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
 * {
   font-family: "Open Sans", sans-serif;
+}
+
+.faq-item {
+  font-family: "Varela Round", sans-serif;
 }

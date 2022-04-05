@@ -4,6 +4,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'body': ['"Varela Round"', 'sans-serif'],
+      },
       colors: {
         'light-blue': '#1282a2',
         'dark-blue': '#1f2760',
