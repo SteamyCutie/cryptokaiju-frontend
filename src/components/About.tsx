@@ -7,7 +7,7 @@ import AboutIcon6 from "../assets/png/About Icon 6.png"
 
 const About: React.FC = () => {
   return (
-    <div className="grid justify-items-center items-center gap-10">
+    <div id="about" className="grid justify-items-center items-center gap-10">
       <div className="font-extrabold text-dark-blue uppercase text-[3rem] mt-24">About</div>
       <div className="grid w-3/5 text-center text-[1.5rem] gap-10">
         <p>Founded in 2018, CryptoKaiju are massively collectible vinyl and plush art toys linked to NFTs for improved provenance and to create exciting new experiences that bridge the gap between the Metaverse and physical world!!!</p>
