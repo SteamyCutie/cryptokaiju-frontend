@@ -14,6 +14,7 @@ const FAQItem: React.FC<FAQItemInterface> = ({ data }) => {
         <img src={ARROW} width={20} height={20} alt="Arrow" style={{ transform: `rotate(${isOpened ? "180" : "0"}deg)`, transition: "all 300ms" }} />
       </div>
       <div className={`${isOpened ? 'flex' : 'hidden'} indent-2 px-5 py-7 text-[1.25rem] text-darker -mt-10 text-justify w-full leading-8`}>{data.answer}</div>
+      <div className={`${isOpened ? 'flex' : 'hidden'} indent-2 px-5 py-7 text-[1.25rem] italic text-darker -mt-10 text-justify w-full leading-8`}>{data.note ? `NOTE: ${data.note}` : ''}</div>
     </div >
   )
 }

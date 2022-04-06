@@ -1,10 +1,10 @@
 [
   {
-    "photo": "https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80",
-    "label": "image1"
+    "title": "Lorem Ipsum",
+    "subtitle": "There are a total of 10,000 WonderPals available."
   },
   {
-    "photo": "https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80",
-    "label": "image2"
+    "title": "Lorem Ipsum",
+    "subtitle": "There are a total of 10,000 WonderPals available."
   }
 ]

@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom"
 
 import './App.css'
 import About from './components/About'
-import Carousel from './components/Carousel'
+import Product from './components/Product'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 import Founder from './components/Founder'
@@ -18,7 +18,7 @@ const App: React.FC = () => {
         <Header />
         <Mint />
         <About />
-        <Carousel />
+        <Product />
         <FAQ />
         <Founder />
         <Press />
