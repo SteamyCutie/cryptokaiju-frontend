@@ -3,6 +3,11 @@ import Carousel from "nuka-carousel"
 import kaijuCarousel from "../configs/kaijuCarousel.json"
 
 const Product: React.FC = () => {
+  const images: any[] = []
+  kaijuCarousel.map((item) => {
+    const img = require(`../assets/jpg/${item === null ? 'user.png' : item}`);
+    images.push(img)
+  })
   return (
     <div className="w-full flex item-center justify-center bg-[url('./assets/jpg/carousel-bg.jpg')] bg-cover mt-20">
       <Carousel
@@ -26,12 +31,13 @@ const Product: React.FC = () => {
         wrapAround={true}
         zoomScale={0.1}
       >
-        {kaijuCarousel.map((step, idx) =>
+        {images.map((step, idx) =>
           <div key={idx} className="grid items-center justify-center text-center w-full h-[240px] md:h-[300px] lg:h-[360px]">
-            <div className="grid items-center gap-5">
+            <img src={step} alt="img" />
+            {/* <div className="grid items-center gap-5">
               <p className="text-[36px] md:text-[40px] lg:text-[48px] text-white font-extrabold">{step.title}</p>
               <p className="text-[16px] md:text-[20px] lg:text-[24px] text-white/90">{step.subtitle}</p>
-            </div>
+            </div> */}
           </div>
         )}
       </Carousel>

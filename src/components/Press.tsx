@@ -6,7 +6,7 @@ const Press: React.FC = () => {
   return (
     <div className="grid justify-items-center items-center gap-10 mt-10">
       <div className="font-extrabold text-dark-blue uppercase text-[2rem] md:text-[2.5rem] lg:text-[3rem] mt-24">Press Links</div>
-      <div className="flex space-x-20 mb-10 bg-dark-white w-full items-center justify-center">
+      <div className="flex space-x-20 mb-10 bg-white w-full items-center justify-center">
         <Carousel
           renderCenterLeftControls={({ previousSlide }) => (
             <button onClick={previousSlide} className="h-[240px] md:h-[300px] lg:h-[360px] w-12 md:w-16 lg:w-20 justify-center items-center flex hover:bg-gradient-to-r from-blacker/40 to-blacker/0">
