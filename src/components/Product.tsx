@@ -4,7 +4,7 @@ import kaijuCarousel from "../configs/kaijuCarousel.json"
 
 const Product: React.FC = () => {
   const images: any[] = []
-  kaijuCarousel.map((item) => {
+  kaijuCarousel.forEach(item => {
     const img = require(`../assets/jpg/${item === null ? 'user.png' : item}`);
     images.push(img)
   })
