@@ -20,11 +20,11 @@ const Mint: React.FC = () => {
   }
 
   return (
-    <div className="bg-light-blue w-full justify-center items-center grid pt-20 md:pt-40 pb-0 gap-10">
+    <div className="bg-light-blue w-full justify-center items-center grid pt-20 md:pt-40 pb-10 md:pb-0 gap-10">
       <Web3ReactProvider getLibrary={getLibrary}>
         <p className="text-dark-blue text-[40px] md:text-[56px] lg:text-[70px] leading-[40px] md:leading-[50px] lg:leading-[60px] font-extrabold text-center tracking-widest">CRYPTOKAIJU<br />Pretty Fine Plushies</p>
-        <div className="grid md:flex items-center justify-center gap-x-8 gap-y-0">
-          <img src={PINK_KAIJU} alt="Pink Kaiju" width={300} height={262} />
+        <div className="grid md:flex items-center justify-center gap-4">
+          <img className="pl-10 md:pl-0" src={PINK_KAIJU} alt="Pink Kaiju" width={300} height={262} />
           <div className="grid gap-4 items-center justify-center">
             <button className="w-full border-4 border-blacker text-white bg-dark-blue/90 text-[1.5rem] px-[1.25rem] py-[0.75rem] font-bold rounded-full hover:bg-dark-blue/80 active:bg-dark-blue transition-all duration-150 ease-out">Mint</button>
             <div className="border-[3px] border-blacker w-[270px] rounded-[20px] justify-between items-center flex px-6 py-2">

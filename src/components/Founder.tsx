@@ -4,7 +4,7 @@ const Founder: React.FC = () => {
   return (
     <div className="grid justify-items-center items-center gap-4 md:gap-6 lg:gap-10 bg-light-oliver mt-[342px]">
       <div className="flex space-x-12 md:space-x-16 lg:space-x-20 -mt-[262px] mb-0">
-        <img src={KAIJU_WAVING} alt="Kaiju Waving" width={300} height={262} />
+        <img className="translate-x-6" src={KAIJU_WAVING} alt="Kaiju Waving" width={300} height={262} />
       </div>
       <div className="font-extrabold text-dark-blue uppercase text-[2rem] md:text-[2.5rem] lg:text-[3rem] mt-24">About the founder</div>
       <div className="grid w-4/5 lg:w-3/5 text-center text:[1.25rem] md:text-[1.35rem] lg:text-[1.5rem] mb-20 gap-10">
