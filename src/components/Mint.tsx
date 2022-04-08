@@ -4,7 +4,8 @@ import { Web3Provider } from '@ethersproject/providers'
 import { Web3ReactProvider } from '@web3-react/core'
 import { InjectedConnector } from '@web3-react/injected-connector'
 import Web3 from 'web3'
-import PINK_KAIJU from "../assets/png/Pirate-Kaiju-Icon2x.png"
+import PIRATE_KAIJU from "../assets/png/Pirate-Kaiju-Icon2x.png"
+import PINK_KAIJU from "../assets/png/Pink Kaiju.png"
 
 const web3 = new Web3(Web3.givenProvider)
 
@@ -20,11 +21,12 @@ const Mint: React.FC = () => {
   }
 
   return (
-    <div className="bg-light-blue w-full justify-center items-center grid pt-20 md:pt-40 pb-12 gap-10">
+    <div className="bg-light-blue w-full justify-center items-center grid pt-20 md:pt-40 pb-12 md:pb-0 gap-10">
       <Web3ReactProvider getLibrary={getLibrary}>
         <p className="text-dark-blue text-[40px] md:text-[56px] lg:text-[70px] leading-[40px] md:leading-[50px] lg:leading-[60px] font-extrabold text-center tracking-widest">CRYPTOKAIJU<br />Pretty Fine Plushies</p>
         <div className="grid md:flex items-center justify-center gap-4">
-          <img src={PINK_KAIJU} alt="Pink Kaiju" width={300} height={262} />
+          <img className="flex md:hidden" src={PIRATE_KAIJU} alt="Pirate Kaiju" width={300} height={300} />
+          <img className="hidden md:flex" src={PINK_KAIJU} alt="Pink Kaiju" width={300} height={262} />
           <div className="grid gap-4 items-center justify-center">
             <button className="w-full border-4 border-blacker text-white bg-dark-blue/90 text-[1.5rem] px-[1.25rem] py-[0.75rem] font-bold rounded-full hover:bg-dark-blue/80 active:bg-dark-blue transition-all duration-150 ease-out">Mint</button>
             <div className="border-[3px] border-blacker w-[270px] rounded-[20px] justify-between items-center flex px-6 py-2">
