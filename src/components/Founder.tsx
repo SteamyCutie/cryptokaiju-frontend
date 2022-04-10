@@ -2,7 +2,7 @@ import KAIJU_WAVING from "../assets/png/Kaiju Waving.png"
 
 const Founder: React.FC = () => {
   return (
-    <div className="grid justify-items-center items-center gap-4 md:gap-6 lg:gap-10 bg-white mt-[342px]">
+    <div className="grid justify-items-center items-center gap-4 md:gap-6 lg:gap-10 bg-light-oliver mt-[342px]">
       <div className="flex space-x-12 md:space-x-16 lg:space-x-20 -mt-[262px] mb-0">
         <img className="translate-x-6" src={KAIJU_WAVING} alt="Kaiju Waving" width={300} height={262} />
       </div>
