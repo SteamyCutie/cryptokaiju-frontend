@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router } from "react-router-dom"
+import { Provider, defaultChains } from 'wagmi'
+import { InjectedConnector } from 'wagmi/connectors/injected'
 
 import './App.css'
 import About from './components/About'
@@ -37,15 +39,22 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Router>
-        <Header />
-        <Mint />
-        <About />
-        <Product />
-        <FAQ />
-        <Founder />
-        <Press />
-        <Footer />
-        <ScrollUpButton handler={scrollToTop} showButton={showButton} />
+        <Provider connectors={[
+          new InjectedConnector({
+            chains: defaultChains,
+            options: { shimDisconnect: true },
+          })
+        ]}>
+          <Header />
+          <Mint />
+          <About />
+          <Product />
+          <FAQ />
+          <Founder />
+          <Press />
+          <Footer />
+          <ScrollUpButton handler={scrollToTop} showButton={showButton} />
+        </Provider>
       </Router>
     </div>
   );
