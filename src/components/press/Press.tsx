@@ -40,7 +40,7 @@ const Press: React.FC = () => {
               <a href={step.link} target="_blank" className="grid items-center gap-5 h-[360px] md:h-[450px] lg:h-[540px]" rel="noreferrer">
                 {/* <p className="text-[36px] md:text-[40px] lg:text-[48px] text-black font-extrabold">{step.title}</p> */}
                 {/* <p className="max-w-2xl text-[16px] md:text-[20px] lg:text-[24px] text-black/90 mb-10">{step.subtitle}</p> */}
-                <p className="max-w-4xl text-center text-[30px] md:text-[34px] lg:text-[38px] text-black font-extrabold">{step.subtitle}</p>
+                <p className="press-font max-w-4xl text-center text-[30px] md:text-[34px] lg:text-[38px] text-black font-extrabold">{step.subtitle}</p>
               </a>
             </SwiperSlide>
           )}

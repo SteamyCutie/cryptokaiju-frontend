@@ -21,3 +21,7 @@
 .press .swiper-button-prev::after {
     display: none;
 }
+
+.press-font {
+    font-family: "Open Sans";
+}
