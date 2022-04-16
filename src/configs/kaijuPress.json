@@ -1,10 +1,20 @@
 [
   {
-    "title": "Something Here",
-    "subtitle": "There are a total of 10,000 WonderPals available."
+    "image": "PRESS-SLIDE1.png",
+    "title": "Something here",
+    "subtitle": "Sacramento Kings Partner with CryptoKaiju to Launch First Physical Crypto-Collectible in Professional Sports",
+    "link": "https://www.nba.com/kings/blog/sacramento-kings-partner-cryptokaiju-launch-first-physical-crypto-collectible-professional"
   },
   {
+    "image": "PRESS-SLIDE2.png",
     "title": "Lorem Ipsum",
-    "subtitle": "There are a total of 10,000 WonderPals available."
+    "subtitle": "CryptoKaiju Partners with Dapper Labs to Produce Physical CryptoKitties",
+    "link": "https://decrypt.co/8182/cryptokaiju-cryptokitties-collectibles"
+  },
+  {
+    "image": "PRESS-SLIDE3.png",
+    "title": "Something here",
+    "subtitle": "Physical Meets Digital: CryptoKaiju Launches First Collectible Toys On The Blockchain",
+    "link": "https://www.forbes.com/sites/rebeccacampbell1/2018/11/28/physical-meets-digital-cryptokaiju-launches-first-collectible-toys-on-the-blockchain/"
   }
 ]

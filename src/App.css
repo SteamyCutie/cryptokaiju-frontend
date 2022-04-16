@@ -39,3 +39,7 @@ body {
 ::-webkit-scrollbar-track {
   background: rgba(204, 204, 204, 0.3);
 }
+
+:root {
+  --swiper-theme-color: #1182a2 !important;
+}
