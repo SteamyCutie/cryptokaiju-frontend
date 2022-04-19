@@ -32,7 +32,7 @@ const Mint: React.FC = () => {
   console.log('signer', signer)
 
   const contract = useContract({
-    addressOrName: '0xBe9e888c89B34DeDF41F5c938B0F58e282ACa643',
+    addressOrName: '0x86153A0d9c060BE48A0cfc2daEed3Eee957C9DD7',
     contractInterface: [
       {
         "inputs": [
