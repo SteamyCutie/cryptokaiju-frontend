@@ -1,6 +1,6 @@
 import Notify from 'bnc-notify'
 
-const networkId = 4
+const networkId = 1
 const dappId = '7a0a4da1-7c92-46af-a12e-e810c1b39d3e'
 
 export function initNotify() {
