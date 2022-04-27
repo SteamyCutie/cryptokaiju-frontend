@@ -163,7 +163,7 @@ const Mint: React.FC = () => {
       if (!ready) return
 
       notify.config({ desktopPosition: 'topLeft', mobilePosition: 'bottom' })
-      const { emitter } = notify.hash('tx.hash')
+      const { emitter } = notify.hash(tx.hash)
       
       setNumToMint(0)
       setUserClaims([])
