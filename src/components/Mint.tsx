@@ -14,7 +14,7 @@ interface OnboardAPI {}
 
 const Mint: React.FC = () => {
 
-  const [{ wallet }, connect, disconnect] = useConnectWallet()
+  const [{ wallet, connecting }, connect, disconnect] = useConnectWallet()
   const connectedWallets = useWallets()
 
   const [web3Onboard, setWeb3Onboard] = useState<OnboardAPI | null>(null)
@@ -70,6 +70,10 @@ const Mint: React.FC = () => {
     }
   }, [web3Onboard, connect])
 
+  const readyToTransact = async () => {
+    if (!wallet && connecting) return false
+    return true
+  }
 
   const reserve = async () => {
     console.log('Reserve triggered...')
@@ -155,17 +159,29 @@ const Mint: React.FC = () => {
         }
       )
 
-      notify.hash(tx.hash)
+      const ready = await readyToTransact()
+      if (!ready) return
+
+      notify.config({ desktopPosition: 'topLeft', mobilePosition: 'bottom' })
+      const { emitter } = notify.hash('tx.hash')
+      
+      setNumToMint(0)
+      setUserClaims([])
+      setProofs([])
+
+      emitter.on('txSent', console.log)
+      emitter.on('txPool', console.log)
+      emitter.on('txConfirmed', transaction => {
+        // Redirect
+        window.location.href = plushClaimRedirect
+      })
+      emitter.on('txSpeedUp', console.log)
+      emitter.on('txCancel', console.log)
+      emitter.on('txFailed', console.log)
+
     } catch (error) {
       console.log(error)
     }
-
-    setNumToMint(0)
-    setUserClaims([])
-    setProofs([])
-
-    // Redirect
-    window.location.href = plushClaimRedirect
   }
 
   return (
