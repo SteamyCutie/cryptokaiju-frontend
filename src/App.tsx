@@ -1,15 +1,17 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router } from "react-router-dom"
+import { Provider, defaultChains } from 'wagmi'
+import { InjectedConnector } from 'wagmi/connectors/injected'
 
 import './App.css'
 import About from './components/About'
-import Product from './components/Product'
+import Product from './components/product/Product'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 import Founder from './components/Founder'
 import Header from './components/Header'
 import Mint from './components/Mint'
-import Press from './components/Press'
+import Press from './components/press/Press'
 import { ScrollUpButton } from './components/utils/ScrollUpButton'
 
 const App: React.FC = () => {
@@ -37,15 +39,22 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Router>
-        <Header />
-        <Mint />
-        <About />
-        <Product />
-        <FAQ />
-        <Founder />
-        <Press />
-        <Footer />
-        <ScrollUpButton handler={scrollToTop} showButton={showButton} />
+        <Provider connectors={[
+          new InjectedConnector({
+            chains: defaultChains,
+            options: { shimDisconnect: true },
+          })
+        ]}>
+          <Header />
+          <Mint />
+          <About />
+          <Product />
+          <FAQ />
+          <Founder />
+          <Press />
+          <Footer />
+          <ScrollUpButton handler={scrollToTop} showButton={showButton} />
+        </Provider>
       </Router>
     </div>
   );

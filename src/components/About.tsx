@@ -8,11 +8,9 @@ import AboutIcon6 from "../assets/png/About Icon 6.png"
 const About: React.FC = () => {
   return (
     <div id="about" className="grid justify-items-center items-center gap-6 md:gap-8 lg:gap-10">
-      <div className="font-extrabold text-dark-blue uppercase text-[2rem] md:text-[2.5rem] lg:text-[3rem] mt-24">About</div>
+      <div className="font-extrabold text-dark-blue uppercase text-[2rem] md:text-[2.5rem] lg:text-[3rem] mt-24">777 Huggable Kaiju!!</div>
       <div className="grid w-4/5 lg:w-3/5 text-center text-[1rem] md:text-[1.25rem] lg:text-[1.5rem] gap-6 md:gap-8 lg:gap-10">
-        <p>Founded in 2018, CryptoKaiju are massively collectible vinyl and plush art toys linked to NFTs for improved provenance and to create exciting new experiences that bridge the gap between the Metaverse and physical world!!!</p>
-        <p>Pretty Fine Plushies are 777 soft huggable plush Kaiju ready for new homes. Each plush NFT is unique and was randomly created from hundreds of hand-drawn traits.</p>
-        <p>Simply mint your NFT and you'll be redirected to a form where you can enter your shipping details.</p>
+        <p>These snuggly fuzzy cuties are ready to make some new frens! To take one home simply mint your NFT and you'll be redirected to enter your shipping details.</p>
       </div>
       <div className="grid grid-cols-3 xl:flex gap-6 md:gap-10 lg:gap-16 m-10 justify-items-center">
         <img src={AboutIcon1} alt="About Icon 1" width="168px" />

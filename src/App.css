@@ -11,7 +11,7 @@ body {
 }
 
 .faq-item {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .slider-control-bottomcenter .paging-item {
@@ -38,4 +38,8 @@ body {
 
 ::-webkit-scrollbar-track {
   background: rgba(204, 204, 204, 0.3);
+}
+
+:root {
+  --swiper-theme-color: #1182a2 !important;
 }

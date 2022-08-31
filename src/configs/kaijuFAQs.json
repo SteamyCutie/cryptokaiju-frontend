@@ -1,23 +1,22 @@
 [
   {
-    "question": "Lorem Ipsum",
-    "answer": "There are a total of 10,000 WonderPals available."
+    "question": "ELI5, how does this work?",
+    "answer": "CryptoKaiju are plush and vinyl toys and each is unique with an NFC chip that has a unique serial number, this is then output within the Metadata of the NFT. You can find out more about the project on our main site: https://CryptoKaiju.io"
   },
   {
-    "question": "Lorem Ipsum",
-    "answer": "We launched on February 26, 2022.",
-    "note": "We will never have a stealth-launch, please be careful of scams. Official launch details will be shared on our website, Discord, and our Twitter page."
+    "question": "How many plushes are available to mint?",
+    "answer": "There are 777 plushes with 2 colourways (green and pink)"
   },
   {
-    "question": "Lorem Ipsum",
-    "answer": "Holders of WonderPals will have a fun & cute piece of art, plus access to our close-knit community, holder-exclusive giveaways, contests, priority in future collections, and more!"
+    "question": "Sounds too good to be true! Is this a rug?",
+    "answer": "Nope, I know there's been a lot of false promises about toys and NFTs, but we've been consistently delivering since 2018. BOOM!"
   },
   {
-    "question": "Lorem Ipsum",
-    "answer": "NFT stands for “non-fungible token” which are unique digital items that are stored and encrypted on the blockchain that people can buy, own, and trade. NFTs can simply be digital art but can have various benefits. They can be treated like membership cards where holders get exclusive access to things like websites, events, merchandise, and more."
+    "question": "Wen shipping ?",
+    "answer": "Shipping for the green colour way starts 5th of May, the pink will begin slightly later during the month."
   },
   {
-    "question": "Lorem Ipsum",
-    "answer": "Our mint has sold out! You can purchase WonderPals on the secondary market on platforms like OpenSea."
+    "question": "Is each plush unique?",
+    "answer": "Each plush contains an NFC chip with a unique ID, but they all look like the ones pictured above."
   }
 ]

@@ -1,0 +1,21 @@
+.product .swiper-button-next {
+    background-image: url(../../assets/svg/next-slide.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+  
+.product .swiper-button-next::after {
+    display: none;
+}
+
+.product .swiper-button-prev {
+    background-image: url(../../assets/svg/previous-slide.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+  
+.product .swiper-button-prev::after {
+    display: none;
+}
